@@ -1,0 +1,10 @@
+html    
+    head 
+        title Plantila Pug 
+    body 
+        a(href="/products") Ver productos
+        form(action="/product" method="post")
+            input(type="text" name="name" placeholder="Nombre")
+            input(type="number" name="price" placeholder="Price")
+            input(type="text" name="thumbnail" placeholder="Url de img")
+            input(type="submit" value="Cargar Producto")

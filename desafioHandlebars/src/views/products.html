@@ -1,0 +1,35 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script>
+      const template = Handlebars.compile(`
+
+            {{#each products}}
+            <p>hola</p>
+                <li>
+                    <p>Nombre: {{this.name}} </p>
+                    <p>Precio:{{this.price}} </p>
+                    <img src=" {{this.thumbnail}}" width="50"></img>
+                </li>
+
+            {{/each}}
+        `);
+
+      const html = template({
+        name: this.name,
+        price: this.price,
+        thumbnail: this.thumbnail,
+      });
+
+      document.querySelector("body").innerHTML = html;
+    </script>
+  </body>
+</html>
+ -->

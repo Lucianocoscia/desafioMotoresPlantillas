@@ -1,0 +1,16 @@
+
+<a href="/">Cargar productos</a>
+
+{{#if products}}
+    {{#each products}}
+        <h2>Nombre: {{this.name}}</h2>
+        <p>Precio: {{this.price}}</p>
+        <img src="{{this.thumbnail}}" alt="{{this.thumbnail}}">
+    {{/each}}
+    {{else}}
+    <p>No hay productos</p>
+{{/if}}
+
+
+
+

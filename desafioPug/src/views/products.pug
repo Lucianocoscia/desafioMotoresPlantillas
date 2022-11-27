@@ -1,0 +1,17 @@
+html 
+    head
+        title Productos cargados 
+    body 
+        a(href="/") Cargar productos 
+
+         if products.length
+
+            each product in products    
+                    div(style="display:flex; align-items:center") Nombre:  
+                        p=  product.name
+                    div(style="display:flex; align-items:center") Precio: 
+                        p=  product.price
+                    div(style="display:flex; align-items:center") Thumbnail: 
+                        img(src=product.thumbnail)
+         else 
+            p No hay productos
