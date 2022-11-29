@@ -21,12 +21,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: cadetblue;
+        background-color: #e9ecef;
         width: 400px;
         height: 500px;
       "
     >
-      <h1>Cargar un producto</h1>
+      <h1 style="color: #0806ff">Cargar un producto</h1>
       <form
         style="
           display: flex;
@@ -38,15 +38,29 @@
         action="/product"
         method="post"
       >
-        <input class="m-1" type="text" name="name" placeholder="Nombre" />
-        <input class="m-1" type="number" name="price" placeholder="Precio" />
         <input
-          class="m-1"
+          class="m-1 form-control"
+          type="text"
+          name="name"
+          placeholder="Nombre"
+        />
+        <input
+          class="m-1 form-control"
+          type="number"
+          name="price"
+          placeholder="Precio"
+        />
+        <input
+          class="m-1 form-control"
           type="text"
           name="thumbnail"
           placeholder="Thumbnail"
         />
-        <input class="m-1" type="submit" value="Cargar Producto" />
+        <input
+          class="m-1 btn btn-primary"
+          type="submit"
+          value="Cargar Producto"
+        />
       </form>
     </div>
   </body>

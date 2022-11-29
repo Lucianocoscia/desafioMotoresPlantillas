@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon ./desafioEjs/src/server.js"
+    "start": "nodemon ./desafioPug/src/server.js"
   },
   "keywords": [],
   "author": "",

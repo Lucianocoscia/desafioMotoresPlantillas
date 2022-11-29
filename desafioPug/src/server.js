@@ -1,7 +1,7 @@
 import express, { json, urlencoded } from "express";
 import routes from "./routes/index.js";
 //dirname
-import { dirname } from "path";
+import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -15,6 +15,8 @@ app.set("view engine", "pug");
 app.set("views", __dirname + "/views");
 
 app.use("/", routes);
+// app.use("/", express.static(__dirname + "./views/index.css"));
+app.use(express.static(join(__dirname, "./views/index.css")));
 
 app.listen(8080, () => {
   console.log("Server listening on port 8080");
